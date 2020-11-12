@@ -8,6 +8,18 @@ The followings explanation are the leaflet for our IoT Projects
 By Ilja and Jorgo  
 
 The redeeming of an item is processed with the following algorithm 
-![alt schema](https://user-images.githubusercontent.com/63868715/99004323-2b9fea80-253f-11eb-9ad0-3c7731ae3105.png)
+![alt schema](https://user-images.githubusercontent.com/63868715/99004574-9ea96100-253f-11eb-8ad6-36e6fcf5f5f8.png)
+  
+1- The User start by selecting the redeemable he want to buy. The redeemables are fetched using the Co-Workers API
+2- A Transaction for this item is created by making a request on the API. The API answer and if the transaction fail the led Blink in quick sucession to indicate the error. If the transaction is accepted the light turn on and the user can scan his RFID Card.
+3- The user scan his card.
+4- The ID of the card is linked to the transaction and the transaction is send to the API to be validated if the transaction fail the led Blink in quick sucession to indicate the error. If the transaction suceed the light stop blinking
+5- The User enjoy his redeemable
+
 
 This project can be divided in two parts: API Side (Co-workers API) and Client Side (Raspberry Pi)
+
+### API Side - Transaction Security
+
+
+### Client Side - Transaction Handling

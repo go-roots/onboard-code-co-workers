@@ -23,3 +23,6 @@ This project can be divided in two parts: API Side (Co-workers API) and Client S
 
 
 ### Client Side - Transaction Handling
+On the client side the code can be considered as a POC, as for now the Redeemable is chosen directly on the computer and the giving of the redeemable is not yet defined.  
+However the present code is the backbone of a safe and efficient redeeming.  
+

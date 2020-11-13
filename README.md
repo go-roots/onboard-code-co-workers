@@ -27,6 +27,7 @@ On the client side the code can be considered as a POC, as for now the Redeemabl
 However the present code is the backbone of a safe and efficient redeeming.  
 
 ## Face-Recognition - Project 2
+By Shraddha, DaiQiao and Paul
 
 The face recognition work according to the following schema:  
 ![alt schema](https://user-images.githubusercontent.com/63868715/99015411-3e251e80-2555-11eb-9dbf-c1fd5ad40044.png)

@@ -20,6 +20,8 @@ The redeeming of an item is processed with the following algorithm
 This project can be divided in two parts: API Side (Co-workers API) and Client Side (Raspberry Pi)   
   
 ### API Side - Transaction Security
+The raspberry uses 2 endpoints provided by the api : one for creating a transaction, another one for fulfilling the transaction. To create a transaction, one needs to be authenticated with a role of 'admin', which is the case of the raspberry. The transaction is initiated by a POST request with the redeemableId in the body of the request. The raspberry gets back the transactionId as a response. Then it can use it to fulfill the transaction by POSTing to the 2nd route the transactionId and the rfid that has just been scanned. The corresponding user is found in the database and its points are updated, if he has enough points of course.
+The transaction is set to expire automatically within 5min of not being validated.
 
 
 ### Client Side - Transaction Handling
